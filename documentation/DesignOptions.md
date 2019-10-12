@@ -1,6 +1,7 @@
 ### Mainboard
 Currently there are two designs being discussed:
 1. Raspbery Pi (or Beagle with HDMI?) based solution - A hat/cape for the SBC would control a Stepper motor, LED array, fans, and endstop. 
+Need board with 4K HDMI resolution
 An HDMI to MIPI adapter will be used to control the print screen.
 2. A All-In-One control board - Similar to the one provided by CBD. The board would have a microcontroller to handle the 
 Stepper motor, LED array, fans, and endstop. It would have an FPGA to control the print screen.
@@ -21,10 +22,11 @@ https://learn.watterott.com/silentstepstick/comparison/
   - https://www.trinamic.com/products/integrated-circuits/details/tmc5160/
   - Pros: cooler operation, higher amps, more torque
   - Cons: overkill, twice the price
-
+ - external ready, professional Step Driver (not chip) ~20$
 ### LED options
 - EPAX parallel 50W (will need cooling - see below)
   - https://epax3d.com/products/parallel-matrix-mod-for-epax-x1
+  This LED works fine from 24V - up to 72W
 - #LCDCoollingResearch FB hashtag to various bits posted there:
   - https://www.facebook.com/hashtag/lcdcoolingresearch
 
@@ -38,3 +40,4 @@ https://learn.watterott.com/silentstepstick/comparison/
   - Pros: Easier to find parts like fans
 - 24V
   - Pros: higher torque on stepper motor, less current to get same power means smaller guage wire needed.
+no problem with fans and other parts. Smaller current with same power.
